@@ -10,6 +10,6 @@ import UIKit
 
 class ViewController: UIViewController
 {
-    // Page 125 - Intrinsic Content Size
+    // This is deleted because it's too vague, apparently. 
 }
 
