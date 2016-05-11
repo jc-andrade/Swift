@@ -55,6 +55,7 @@
                             </textField>
                         </subviews>
                         <color key="backgroundColor" red="0.96078431372549022" green="0.95686274509803915" blue="0.94509803921568625" alpha="1" colorSpace="calibratedRGB"/>
+                        <gestureRecognizers/>
                         <constraints>
                             <constraint firstItem="dkl-BT-fSY" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="5Sx-36-eV3"/>
                             <constraint firstItem="dkl-BT-fSY" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="CSI-Hh-e2e"/>
@@ -67,12 +68,21 @@
                             <constraint firstItem="OnH-93-f9b" firstAttribute="centerX" secondItem="gUS-5c-3lW" secondAttribute="centerX" id="vEg-fp-JvB"/>
                             <constraint firstItem="0r5-jn-gaM" firstAttribute="top" secondItem="wNG-N6-rkA" secondAttribute="bottom" constant="8" id="vKX-Zf-Kqu"/>
                         </constraints>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="Ykq-sp-VX0" appends="YES" id="LHF-BO-uHN"/>
+                        </connections>
                     </view>
                     <connections>
                         <outlet property="celsiusLabel" destination="0r5-jn-gaM" id="bAj-hY-AYk"/>
+                        <outlet property="textField" destination="dkl-BT-fSY" id="hif-at-wex"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="Ykq-sp-VX0">
+                    <connections>
+                        <action selector="dismissKeyboard:" destination="BYZ-38-t0r" id="hvY-f2-AGL"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
         </scene>
     </scenes>
