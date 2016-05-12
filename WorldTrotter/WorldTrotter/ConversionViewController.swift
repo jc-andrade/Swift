@@ -5,11 +5,30 @@
 //  Created by Julio Andrade on 5/11/16.
 //  Copyright © 2016 Julio Andrade. All rights reserved.
 //
-
 import UIKit
+// Page 175
 
-class ConversionViewControlller: UIViewController
+// Gets current hour and minute so that we can change background color depending on time
+let hour = NSCalendar.currentCalendar().component(.Hour, fromDate: NSDate())
+let minute = NSCalendar.currentCalendar().component(.Minute, fromDate: NSDate())
+
+class ConversionViewControlller: UIViewController, UITextFieldDelegate // the UITextFieldDelegate declares that ConversionViewController conforms to the UITExtFieldDelegate protocolor
 {
+    // override viewDidLoad to print a statement to the console
+    override func viewDidLoad()
+    {
+        // Always call the super implementation of viewDidLoad
+        super.viewDidLoad()
+        print("ConversionViewController loaded its view.")
+    }
+    
+    override func viewWillAppear(animated: Bool)
+    {
+        // If evening [defined as 5:30pm]
+        if (hour >= 17 && minute >= 30) {
+        self.view.backgroundColor = UIColor.lightGrayColor()
+        } else {/*defaultColor*/}
+    }
     /****************************
      *       IB Outlets         *
      *****************************/
@@ -68,6 +87,7 @@ class ConversionViewControlller: UIViewController
         }
     }
 
+
     /****************************
      *       Regular functions  *
      *****************************/
@@ -78,5 +98,19 @@ class ConversionViewControlller: UIViewController
         } else {
             celsiusLabel.text = "???"
         }
+    }
+    
+    // Supposed to print text fields current text as well as replacement string, Return true for easiness
+    // Also supposed to not let us put more than 1 decimal in at a time.
+    func textField(textField: UITextField,
+        shouldChangeCharactersInRage range: NSRange,
+        replacementString string: String) -> Bool {
+
+        let numberOnly = NSCharacterSet.init(charactersInString: "0123456789")
+        let stringFromTextField = NSCharacterSet.init(charactersInString: string)
+        let strValid = numberOnly.isSupersetOfSet(stringFromTextField)
+        return strValid
+        // ------------------------------------------- This dont work atm
+            
     }
 }

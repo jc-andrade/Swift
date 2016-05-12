@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="MSK-Rc-u9i">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <scenes>
-        <!--Conversion View Controlller-->
+        <!--Convert-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ConversionViewControlller" customModule="WorldTrotter" customModuleProvider="target" sceneMemberID="viewController">
@@ -51,6 +51,7 @@
                                 <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="decimalPad"/>
                                 <connections>
                                     <action selector="fahrenheitFieldEditingChanged:" destination="BYZ-38-t0r" eventType="editingChanged" id="Gj5-DL-bgk"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="t6d-OW-APK"/>
                                 </connections>
                             </textField>
                         </subviews>
@@ -72,6 +73,7 @@
                             <outletCollection property="gestureRecognizers" destination="Ykq-sp-VX0" appends="YES" id="LHF-BO-uHN"/>
                         </connections>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Convert" image="ConvertIcon" id="bgc-Ia-ghB"/>
                     <connections>
                         <outlet property="celsiusLabel" destination="0r5-jn-gaM" id="bAj-hY-AYk"/>
                         <outlet property="textField" destination="dkl-BT-fSY" id="hif-at-wex"/>
@@ -85,5 +87,41 @@
                 </tapGestureRecognizer>
             </objects>
         </scene>
+        <!--Map-->
+        <scene sceneID="AeN-uY-qCP">
+            <objects>
+                <viewController id="W1V-fK-bJU" customClass="MapViewController" customModule="WorldTrotter" customModuleProvider="target" sceneMemberID="viewController">
+                    <mapView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" id="FdC-eT-TDA">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    </mapView>
+                    <tabBarItem key="tabBarItem" title="Map" image="MapIcon" id="8Og-6t-oGp"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="O7C-Vc-iUC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1842" y="397"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="y10-Wp-cln">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="MSK-Rc-u9i" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="e1Q-Co-E77">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="Sgk-y5-E8O"/>
+                        <segue destination="W1V-fK-bJU" kind="relationship" relationship="viewControllers" id="Rxa-jk-5W0"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7nD-j9-CWM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1205" y="397"/>
+        </scene>
     </scenes>
+    <resources>
+        <image name="ConvertIcon" width="49" height="33"/>
+        <image name="MapIcon" width="49" height="33"/>
+    </resources>
 </document>
