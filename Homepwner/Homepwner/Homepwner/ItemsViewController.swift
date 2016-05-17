@@ -9,5 +9,12 @@
 import UIKit
 
 class ItemsViewController: UITableViewController {
+    // Add a property for an itemStore
+    var itemStore: ItemStore!
     
+    // Implement tableView(_:numberOfRowsInSection:)
+    override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return itemStore.allItems.count
+    }
+    // Section 9 - UITableViews, page 273
 }

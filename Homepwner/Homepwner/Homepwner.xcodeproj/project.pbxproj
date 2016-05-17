@@ -8,22 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		432352191CEAC9DC0056A0D8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 432352181CEAC9DC0056A0D8 /* AppDelegate.swift */; };
-		4323521B1CEAC9DC0056A0D8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4323521A1CEAC9DC0056A0D8 /* ViewController.swift */; };
 		4323521E1CEAC9DC0056A0D8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4323521C1CEAC9DC0056A0D8 /* Main.storyboard */; };
 		432352201CEAC9DC0056A0D8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4323521F1CEAC9DC0056A0D8 /* Assets.xcassets */; };
 		432352231CEAC9DC0056A0D8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 432352211CEAC9DC0056A0D8 /* LaunchScreen.storyboard */; };
 		4323522B1CEACE0C0056A0D8 /* ItemsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4323522A1CEACE0C0056A0D8 /* ItemsViewController.swift */; };
+		4323522D1CEACEE00056A0D8 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4323522C1CEACEE00056A0D8 /* Item.swift */; };
+		4323522F1CEAD0EC0056A0D8 /* ItemStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4323522E1CEAD0EC0056A0D8 /* ItemStore.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		432352151CEAC9DC0056A0D8 /* Homepwner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Homepwner.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		432352181CEAC9DC0056A0D8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		4323521A1CEAC9DC0056A0D8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		4323521D1CEAC9DC0056A0D8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4323521F1CEAC9DC0056A0D8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		432352221CEAC9DC0056A0D8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		432352241CEAC9DC0056A0D8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4323522A1CEACE0C0056A0D8 /* ItemsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemsViewController.swift; sourceTree = "<group>"; };
+		4323522C1CEACEE00056A0D8 /* Item.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		4323522E1CEAD0EC0056A0D8 /* ItemStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemStore.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,12 +59,13 @@
 			isa = PBXGroup;
 			children = (
 				432352181CEAC9DC0056A0D8 /* AppDelegate.swift */,
-				4323521A1CEAC9DC0056A0D8 /* ViewController.swift */,
 				4323521C1CEAC9DC0056A0D8 /* Main.storyboard */,
 				4323521F1CEAC9DC0056A0D8 /* Assets.xcassets */,
 				432352211CEAC9DC0056A0D8 /* LaunchScreen.storyboard */,
 				432352241CEAC9DC0056A0D8 /* Info.plist */,
 				4323522A1CEACE0C0056A0D8 /* ItemsViewController.swift */,
+				4323522C1CEACEE00056A0D8 /* Item.swift */,
+				4323522E1CEAD0EC0056A0D8 /* ItemStore.swift */,
 			);
 			path = Homepwner;
 			sourceTree = "<group>";
@@ -139,8 +142,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4323521B1CEAC9DC0056A0D8 /* ViewController.swift in Sources */,
 				4323522B1CEACE0C0056A0D8 /* ItemsViewController.swift in Sources */,
+				4323522D1CEACEE00056A0D8 /* Item.swift in Sources */,
+				4323522F1CEAD0EC0056A0D8 /* ItemStore.swift in Sources */,
 				432352191CEAC9DC0056A0D8 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
