@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "EC0CBB051C7C1DB528D0C127CDFE1BC385269DD2",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "3E4E94697C95FD4F7013F7B0CFDB550564F70FB4" : 0,
+    "EC0CBB051C7C1DB528D0C127CDFE1BC385269DD2" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "23425C7B-6323-452B-A332-9E355C781B56",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "3E4E94697C95FD4F7013F7B0CFDB550564F70FB4" : "",
+    "EC0CBB051C7C1DB528D0C127CDFE1BC385269DD2" : "Swift\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "WorldTrotter",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "WorldTrotter\/WorldTrotter.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/jc-andrade\/cpp-exercises.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "3E4E94697C95FD4F7013F7B0CFDB550564F70FB4"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/jc-andrade\/Swift.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "EC0CBB051C7C1DB528D0C127CDFE1BC385269DD2"
+    }
+  ]
+}
